@@ -28,21 +28,14 @@
         <div class="navbar-collapse collapse mr-auto" id="navbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Work</a></li>
-                <li class="nav-item"><a class="nav-link">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
 
             </ul>
         </div>
     </nav>
 
-    <div id="title" class="d-flex flex-column justify-content-center align-items-center">
-        <!-- <img class="banner" src="images/banner.jpeg" alt="banner image" /> -->
-        <!-- <h1>Hello, I'm Hungry Sloth! </h1>
-        <h3>I am a student at Brown University with an interest in product management, user
-            experience, and sustainability.</h3> -->
-    </div>
-
-    <div id="title" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="dev-title" class="d-flex flex-column justify-content-center align-items-center">
         <h1>Development</h1>
     </div>
 
@@ -58,48 +51,94 @@
                     <h4>November 2022 - December 2022</h4>
             </div>
             <div class="dev-card">
-                <a href="https://hungrysloth344.github.io/Development"><img src="images/development.png"
-                        alt="hawaii tribune herald news" /></a>
+                <h2>Final Product</h2>
+                <a class="links" href="https://hungrysloth344.github.io/Development"><img src="images/development.png"
+                        alt="cool animals" /></a>
             </div>
-            <hr>
+            <!-- <hr> -->
         </div>
 
     </section>
 
     <section id="about-prod" class="container-fluid display-flex justify-content-center align-items-center">
-
-        <!-- <div class="dev-container"> -->
-
-        <!-- <div class="dev-card"> -->
-        <h2>The Product</h2>
+        <div class="md-stepper-horizontal orange">
+            <div class="md-step active">
+                <div class="md-step-circle"><span>1</span></div>
+                <div class="md-step-title">Overview</div>
+                <div class="md-step-bar-left"></div>
+                <div class="md-step-bar-right"></div>
+            </div>
+            <div class="md-step active">
+                <div class="md-step-circle"><span>2</span></div>
+                <div class="md-step-title">API Selection</div>
+                <!-- <div class="md-step-optional">Optional</div> -->
+                <div class="md-step-bar-left"></div>
+                <div class="md-step-bar-right"></div>
+            </div>
+            <div class="md-step active">
+                <div class="md-step-circle"><span>3</span></div>
+                <div class="md-step-title">Architecture</div>
+                <div class="md-step-bar-left"></div>
+                <div class="md-step-bar-right"></div>
+            </div>
+            <div class="md-step active">
+                <div class="md-step-circle"><span>4</span></div>
+                <div class="md-step-title">Conclusion</div>
+                <div class="md-step-bar-left"></div>
+                <div class="md-step-bar-right"></div>
+            </div>
+        </div>
+        <br><br>
+        <h2>Overview</h2>
         <p class="lead" id="product">The goal of the application is for users to view and learn facts about different
             animals. The
             information on
             the animals include the name of the animal, latin name, animal type (Amphibian, Bird, Mammal, or Reptile),
             the time the animal is active (Diurnal or Nocturnal), the maximum length of the animal in feet, and the
             maximum weight in pounds, the lifepan in years, the animal's habitat, diet, and geographical location.
-            <br><br>
+        </p>
+        <hr>
+    </section>
+    <section id="about-prod" class="container-fluid display-flex justify-content-center align-items-center">
 
-            The user can also sort by the name of the animal with radio buttons from Ascending (A-Z), Descending (Z-A),
+        <h2>API Selection</h2>
+        <p class="lead" id="product">I selected a <a href="https://zoo-animal-api.herokuapp.com/">Zoo Animals</a> API
+            for my project. I received data about random zoo animals and their corresponding facts which I then
+            converted into
+            a json file so that I can access the data when building my application.
+        </p>
+        <hr>
+    </section>
+    <section id="about-prod" class="container-fluid display-flex justify-content-center align-items-center">
+
+        <h2>Architecture</h2>
+        <p class="lead" id="product">The application
+            allows the user to sort by the name of the animal with radio buttons from Ascending (A-Z), Descending (Z-A),
             or none at all. The user can also filter by the animal's active time and animal type with radio buttons
             simultaneously. <br><br>
 
-            The user is able to add and remove an animal to their favorites and the total/aggregate maximum length of
+            Additionally, user is able to add and remove an animal to their favorites and the total/aggregate maximum
+            length of
             the animals in the favorites list updates accordingly. The user is also able to clear their favorites list
             with the "Clear Favorites" button.
         </p>
-        <!-- <h2>Timeline</h2>
-                    <h4>November 2022 - December 2022</h4> -->
-        <!-- </div> -->
-        <!-- <div class="dev-card">
-                <a href="https://hungrysloth344.github.io/Development"><img src="images/development.png"
-                        alt="hawaii tribune herald news" /></a>
-            </div>
-            <hr> -->
-        <!-- </div> -->
-
+        <hr>
     </section>
 
+    <section id="about-prod" class="container-fluid display-flex justify-content-center align-items-center">
+
+        <h2>Conclusion</h2>
+        <p class="lead" id="product">From the project, I gained experience with building an application in React from
+            scratch, while also taking into consideration usability principles. Specifically, I learned how React and
+            React components
+            work. That is, how data is passed down through components and how the user triggers state changes.
+            <br><br>
+            To read about my application in further technical detail, check out my <a
+                href="https://github.com/hungrysloth344/Development">Github Repository</a>!
+        </p>
+
+    </section>
+    <button class="question"><a href="development.html"><img src="images/up.png"></a></button>
 </body>
 
 </html>
