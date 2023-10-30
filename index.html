@@ -14,13 +14,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <title>Final Portfolio</title>
+    <title>Celina Ye</title>
 </head>
 
 <body>
     <!-- nav bar was adopted using https://www.codeply.com/p/7plDNvBJnB -->
     <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top mr-auto #3A1C1B;">
-        <a id="left-nav" class="navbar-brand" href="#"> Hungry Sloth</a>
+        <a id="left-nav" class="navbar-brand" href="#"> Celina Ye</a>
         <button class="navbar-toggler" aria-label="toggle navigation" data-bs-toggle="collapse"
             data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span>
@@ -28,14 +28,19 @@
         <div class="navbar-collapse collapse ml-auto" id="navbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#market">Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="mailto:celina_ye@brown.edu"><img id="nav-logos"
+                            src="images/mail.png" width="20" height="20"></a> </li>
+                <li class="nav-item"> <a class="nav-link active" href="https://www.linkedin.com/in/celinaye/">
+                        <img id="nav-logos" src="images/linkedin.png" width="20" height="20">
+                    </a></li>
 
             </ul>
         </div>
     </nav>
 
-    <section id="innews" class="container-fluid display-flex ">
+    <!-- <section id="innews" class="container-fluid display-flex ">
 
         <div class="innews-container">
 
@@ -43,13 +48,36 @@
                 <img id=sloth src="images/sloth.webp" alt="hawaii tribune herald news" />
             </div>
             <div class="innews-card" id="title-text">
-                <h1>Hello, I'm Hungry Sloth! </h1>
-                <h3>I am a junior at Brown University with an interest in the intersection of technology,
+                <h1>Hello, I'm Celina! </h1>
+                <h3>I am a senior at Brown University studying Computer Science and Economics. My interests lies within
+                    the intersection of technology,
                     sustainability, and business.
                 </h3>
             </div>
         </div>
-    </section>
+    </section> -->
+    <div id="market" class="d-flex flex-column">
+        <h1 class="short-bio">Hello, I'm Celina!</h1>
+        <span id="bio-desc" class="lead"> I study Computer Science and Economics at Brown University. I am passionate
+            about
+            creating user-friendly products with a focus
+            on sustainability.
+        </span>
+        <span id="bio-desc" class="lead">
+            I was previously a technology consulting intern at <span style="font-weight: bold;">Deloitte</span>,
+            where I designed
+            Salesforce implementation screens and produced prototypes of the Indiana State Childcare Licensing
+            Management System Portal. I was also a software engineering intern at
+            <span style="font-weight: bold;">L3Harris Technologies</span> and created a 3D global
+            visualization of a constellation of satellites with real time updates using React and
+            CesiumJS.
+
+        </span>
+        <span id="bio-desc" class="lead">In my free time, I love travelling, cooking, exploring new resturants around
+            Providence, and reading.</span>
+
+
+    </div>
 
     <div id="market" class="d-flex flex-column justify-content-center align-items-center">
         <h2 class="mkt">My Projects</h2>
@@ -59,19 +87,35 @@
 
                 <a class="links" href="development.html"><img class="card-img-top" src="images/development.png"
                         alt="Card image cap" /></a>
+                <span id="proj-description" class="lead">An application for users to explore and learn about animals and
+                    animal facts
+                    while
+                    keeping track of their favorites with efficiency.</span>
             </div>
             <div class="card" style="width:450px">
                 <a class="links" href="iterative.html"><img class="card-img-top" src="images/iter.png"
                         alt="Card image cap" /></a>
-
+                <span id="proj-description" class="lead">An interactive interface encompassing the main goals of the
+                    startup, Pyrls,
+                    and its concept
+                    through
+                    an iterative design approach.</span>
             </div>
             <div class="card" style="width:450px">
                 <a class="links" href="redesign.html"><img class="card-img-top" src="images/responsive.png"
                         alt="Card image cap" /></a>
+                <span id="proj-description" class="lead">A redesigned homepage for Hilo Farmers Market to incorporate
+                    usability,
+                    learnability, and
+                    memorability standards and responsiveness.</span>
             </div>
             <div class="card" style="width:450px">
                 <a class="links" href="personas.html"><img class="card-img-top" src="images/personas.png"
                         alt="Card image cap" /></a>
+                <span id="proj-description" class="lead">A user-thinking oriented exercise to observe and interview users
+                    interacting
+                    with the Courses@Brown
+                    interface.</span>
             </div>
         </div>
     </div>
