@@ -63,6 +63,8 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
+    
+
 
 }
 
@@ -155,6 +157,12 @@ body {
 #hifi-iterative {
     width: 13rem;
     height: auto;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+#hifi-iterative:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .userContainer {
@@ -281,7 +289,7 @@ ul {
 .navbar-nav {
     font-size: 20px;
     color: black;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .proto-container img {
@@ -302,12 +310,20 @@ ul {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5rem;
+    /* padding-bottom: 60px; */
+}
+
+#designs {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 #left-nav {
     padding-left: 2rem;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .banner {
@@ -330,19 +346,22 @@ ul {
 #dev-title {
     padding-top: 60px;
     padding-bottom: 40px;
-    /* background-color: #d0a3bc9a; */
+    background-color: #a6d0a39a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-title {
     padding-top: 60px;
     padding-bottom: 40px;
     /* background-color: #7f9fc9c4; */
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-title {
     padding-top: 60px;
     padding-bottom: 40px;
-    /* background-color: #a278bd9a; */
+    background-color: #a278bd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-title {
@@ -353,6 +372,7 @@ ul {
 
 #aboutme {
     padding-bottom: 20px;
+    /* background-color: #a6d0a39a; */
     /* background-color: #eae7e49a; */
 }
 
@@ -416,6 +436,8 @@ ul {
     justify-items: center;
     align-content: center;
     text-align: center;
+    background-color: #a6d0a39a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-title h1 {
@@ -429,6 +451,7 @@ ul {
     justify-items: center;
     align-content: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-title h1 {
@@ -442,6 +465,7 @@ ul {
     justify-items: center;
     align-content: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-title h1 {
@@ -477,7 +501,7 @@ img {
     padding-right: 70px;
     align-items: center;
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #bio-desc {
@@ -486,7 +510,7 @@ img {
     padding-left: 70px;
     padding-right: 70px;
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     align-items: center;
     text-align: center;
 }
@@ -498,6 +522,7 @@ img {
     /* align-items: center;
     justify-content: center; */
 }
+
 #my-logos {
     width: 20px;
 
@@ -517,7 +542,7 @@ li span {
     flex-wrap: wrap;
     gap: 5rem;
     padding-bottom: 5rem;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 /* #market img {
@@ -550,7 +575,7 @@ li span {
     align-items: stretch;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 16rem;
     border-radius: 2rem;
 }
@@ -560,12 +585,37 @@ li span {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    padding-bottom: 3rem;
+    /* padding-bottom: 60px; */
 }
 
 
 a.links:hover img {
     transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a.links img {
+    height: 300px;
+}
+
+a.linkss img {
+    height: 280px;
+}
+
+a.linkss:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a.linksss img {
+    height: 250px;
+}
+
+a.linksss:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -574,7 +624,7 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .innews-container {
@@ -601,13 +651,15 @@ a.links:hover img {
 }
 
 .dev-container {
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 7rem;
-    column-gap: 15rem;
-    padding-bottom: 3rem;
+    padding-top: 10rem;
+    column-gap: 10rem;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .abt-container {
@@ -618,7 +670,7 @@ a.links:hover img {
     /* padding-top: 7rem; */
     column-gap: 6rem;
     padding-bottom: 3rem;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .contact-container {
@@ -633,29 +685,31 @@ a.links:hover img {
 
 .abt-container img {
     width: 350px;
-    height: 280px;
+    height: 250px;
 }
 
 .dev-container img {
-    width: 350px;
+    width: 280px;
     height: auto;
 }
 
 .dev-card img {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     width: 24rem;
     height: auto;
+
 }
 
 .dev-card {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    /* justify-content: center; */
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .dev-card h2 {
-    color: #960f59d0;
+    color: #0f9635d0;
 }
 
 .redesign-container {
@@ -663,9 +717,10 @@ a.links:hover img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 7rem;
-    column-gap: 15rem;
-    padding-bottom: 2rem;
+    padding-top: 10rem;
+    column-gap: 10rem;
+    /* padding-bottom: 1rem; */
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .redesign-container img {
@@ -677,11 +732,14 @@ a.links:hover img {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    /* justify-content: center; */
+    height: 350px;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .redesign-card h2 {
     color: #0f4096de;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .iterative-container {
@@ -689,25 +747,30 @@ a.links:hover img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 7rem;
-    column-gap: 15rem;
-    padding-bottom: 3rem;
+    padding-top: 10rem;
+    column-gap: 10rem;
+    padding-bottom: 2rem;
+    /* font-family:'Courier New', Courier, monospace !important; */
 }
 
 .iterative-container img {
     width: 350px;
-    height: 280px;
+    height: 250px;
 }
 
 .iterative-card {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    /* justify-content:center; */
+    /* font-family:'Courier New', Courier, monospace !important; */
+
+    height: 350px;
 }
 
 .iterative-card h2 {
     color: #5e0f96d0;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .personas-container {
@@ -715,8 +778,8 @@ a.links:hover img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 7rem;
-    column-gap: 15rem;
+    padding-top: 10rem;
+    column-gap: 10rem;
     padding-bottom: 2rem;
 }
 
@@ -730,6 +793,7 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    height: 350px;
 }
 
 .personas-card h2 {
@@ -797,7 +861,7 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-
+    background-color: #a6d0a39a;
     /* background-color: #efcde09a; */
 }
 
@@ -807,7 +871,7 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
     /* background-color: #efcde09a; */
 }
 
@@ -818,7 +882,8 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    /* background-color: #a1b9dd9a; */
+    background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-stoyboarding {
@@ -828,6 +893,7 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative {
@@ -836,8 +902,8 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-
-    /* background-color: #bea3d09a; */
+    font-family: 'Courier New', Courier, monospace !important;
+    background-color: #bea3d09a;
 }
 
 #about-prod {
@@ -846,60 +912,68 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
+    background-color: #a6d0a39a;
+    font-family: 'Courier New', Courier, monospace !important;
     /* background-color: #efcde09a; */
 }
 
 #about-prod h2 {
     text-align: center;
     padding-bottom: 2rem;
+    /* background-color: #a6d0a39a; */
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #about-api {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    /* background-color: #efcde09a; */
+    background-color: #a6d0a39a;
 }
 
 #about-api h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #about-architecture {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    /* background-color: #efcde09a; */
+    background-color: #a6d0a39a;
 }
 
 #about-architecture h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #about-conclusion {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    /* background-color: #efcde09a; */
+    background-color: #a6d0a39a;
 }
 
 #about-conclusion h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #about-prod h4 {
     text-align: left;
     padding-left: 10rem;
     align-self: flex-start;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-probs {
@@ -908,26 +982,30 @@ a.links:hover img {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
-    /* background-color: #a1b9dd9a; */
+    background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-probs h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-problems {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-problems h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-wires {
@@ -937,11 +1015,13 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-wires h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-guide {
@@ -951,11 +1031,13 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-guide h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-protos {
@@ -965,149 +1047,175 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
+
+/* #prototype {
+    padding-bottom: 30px;
+} */
 
 #redesign-protos h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-conclusion {
-    padding-top: 60px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #a1b9dd9a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-conclusion h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #redesign-probs h4 {
     text-align: left;
     padding-left: 10rem;
     align-self: flex-start;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-prod {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-prod h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-proto {
-    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-proto h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-sketch {
-    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-sketch h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-wires {
-    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-wires h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-critique {
-    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-critique h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-revised {
-    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-revised h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-analysis {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-analysis h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-conclusion {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #bea3d09a;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-conclusion h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #iterative-prod h4 {
     text-align: left;
     padding-left: 10rem;
     align-self: flex-start;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-probs {
@@ -1117,67 +1225,90 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-probs h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-sketch {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-sketch h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-obs {
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-obs h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-personas {
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+#personas-personass {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-personas h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-story {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-story h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-conclusion {
@@ -1187,24 +1318,37 @@ a.links:hover img {
     align-items: stretch;
     flex-wrap: wrap;
     background-color: #452a2a27;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-conclusion h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #personas-probs h4 {
     text-align: left;
     padding-left: 10rem;
     align-self: flex-start;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #product {
     padding-left: 10rem;
     padding-right: 10rem;
     padding-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
+
+#products {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    /* padding-bottom: 3rem; */
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+
 
 #problem {
     padding-left: 10rem;
@@ -1321,6 +1465,7 @@ button {
     width: 350px;
     right: 0px;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .dev-card p {
@@ -1336,6 +1481,7 @@ button {
     padding-right: 5rem; */
     right: 0px;
     /* padding-bottom: 2rem; */
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .iterative-card h4 {
@@ -1348,6 +1494,7 @@ button {
     width: 350px;
     right: 0px;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .personas-card h4 {
@@ -1373,6 +1520,7 @@ button {
     width: 350px;
     right: 0px;
     padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 /* h1 {
@@ -1413,9 +1561,9 @@ button {
 }
 
 .mkt {
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 2rem;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .thenews {
@@ -1431,7 +1579,7 @@ button {
     flex-wrap: wrap;
     width: 350px;
     right: 0px;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .innews-card h4 {
@@ -1584,7 +1732,7 @@ button {
         padding-top: 7rem;
         align-items: center;
         justify-content: center;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     #market h2 {
@@ -1593,13 +1741,13 @@ button {
         justify-content: center;
         text-align: center;
         padding-bottom: 10rem;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     #market img {
         width: 40rem;
         height: 30rem;
-    
+
     }
 
     .market-container {
@@ -1608,7 +1756,7 @@ button {
         align-items: center;
         flex-wrap: wrap;
         gap: 8rem;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
         /* width: 10rem; */
     }
 
@@ -1757,18 +1905,18 @@ button {
 
     .navbar {
         min-height: 300px;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
 
     #left-nav {
         font-size: 40px;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     .nav-item {
         font-size: 40px;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     #innews {
@@ -1787,10 +1935,15 @@ button {
 
     .navbar-nav {
         font-size: 6rem;
-        font-family:'Courier New', Courier, monospace !important;
+        font-family: 'Courier New', Courier, monospace !important;
     }
 }
 
 #foot {
     padding-top: 50px;
+}
+
+.md-step-circle:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
 }
